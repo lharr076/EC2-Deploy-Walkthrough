@@ -20,25 +20,25 @@ After I set my config, I create a directory called terraform-aws-instance to hou
   <br />
   <br />
   <p align="center"><a href="https://imgur.com/vpV2F3T"><img src="https://i.imgur.com/vpV2F3T.png" title="source: imgur.com" /></a><p align="center">
- I have VS Code installed so I simply typed code. Main.tf to open the app and I input my information before saving the file in my respective folder.
+ I have VS Code installed so I simply typed code Main.tf to open the app and I input my information before saving the file in my respective folder. A note I would recommend, if you are referencing someone elses code, review it, take the due diligence to look up the ami id to confirm it is still availabile and so forth. This is something I have ran into in the past my very first time trying out Terraform.
   <br />
   <br />
   <br />
   <br />
   <a href="https://imgur.com/253BQX3"><img src="https://i.imgur.com/253BQX3.png" title="source: imgur.com" /></a>
-I navigated back over to the command prompt, made sure I was still in my terraform folder and proceeded with the command terraform init and success the config has been initialized.
+I navigated back over to the command prompt, made sure I was still in my terraform folder and proceeded with the command terraform init and success the config has been initialized. Initializing with Terraform downloads and installs the providers configured in the code, which in this case is AWS.
   <br />
   <br />
   <br />
   <br />
   <a href="https://imgur.com/wzzxcFu"><img src="https://i.imgur.com/wzzxcFu.png" title="source: imgur.com" /></a>
-I like to try and create good habits and that is what terraform fmt does. This will help give your configuration readability and consistency and this command will print out anything that may have been modified.
+I like to try and create good habits with things I am new to and that is what terraform fmt does. This will help give your configuration readability and consistency and this command will print out anything that may have been modified. This is really a cool tool because this can help rule out mistakes because we are all human.
   <br />
   <br />
   <br />
   <br />
   <a href="https://imgur.com/HpmriNq"><img src="https://i.imgur.com/HpmriNq.png" title="source: imgur.com" /></a>
-I input terraform validate to make sure my configuration is syntactically valid and internally consistent
+I input terraform validate to make sure my configuration is syntactically valid and internally consistent. How I interpret this is more checks and balances to the fmt command.
   <br />
   <br />
   <br />
