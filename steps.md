@@ -1,25 +1,25 @@
 <p align="center">
 <a href="https://imgur.com/shcBlVf"><img src="https://i.imgur.com/shcBlVf.png" title="source: imgur.com" /></a>
 <a href="https://imgur.com/B4kJGjv"><img src="https://i.imgur.com/B4kJGjv.png?1" title="source: imgur.com" /></a>
-This is a new set of access keys I needed to generate for my user.
+This is a new set of access keys I needed to generate for my user. I choose to do this for two reasons, 1. I needed to for security reasons and to show simple it is. I logged into my AWS account and in the search bar I search IAM and at the IAM dashboard I select my name create access key. To make your life easier, give your key a tag. I collected my keys then jetted over to the CLI.
   <br />
   <br />
   <br />
   <br />
   <a href="https://imgur.com/bdSY4QZ"><img src="https://i.imgur.com/bdSY4QZ.png" title="source: imgur.com" /></a>
-The local user needed to have AWS CLI installed so I installed it by simply downloading it(insert link here) and next configuring my IAM creds in prep for Terraform.
+The local user needed to have AWS CLI installed so I installed it by simply downloading it from here https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html and next configuring my IAM creds in prep for Terraform.(Not displayed) As I navigated through the AWS config, I did have to input my default region which in my case is US-EAST-1.
   <br />
   <br />
   <br />
   <br />
   <a href="https://imgur.com/GUo2WHF"><img src="https://i.imgur.com/GUo2WHF.png" title="source: imgur.com" /></a>
   <a href="https://imgur.com/BUCJOtT"><img src="https://i.imgur.com/BUCJOtT.png" title="source: imgur.com" /></a>
-After I set my parameters, I create a directory to prepare for my infrastructure files. Then change into that directory
+After I set my config, I create a directory called terraform-aws-instance to house my infrastructure file/s. The directory is made and cd terraform-aws-instance command changes me into that directory to prepare for creating the file to house my code.
   <br />
   <br />
   <br />
   <br />
-  <a href="https://imgur.com/vpV2F3T"><img src="https://i.imgur.com/vpV2F3T.png" title="source: imgur.com" /></a>
+  <p align="center"><a href="https://imgur.com/vpV2F3T"><img src="https://i.imgur.com/vpV2F3T.png" title="source: imgur.com" /></a><p align="center">
  I have VS Code installed so I simply typed code. Main.tf to open the app and I input my information before saving the file in my respective folder.
   <br />
   <br />
