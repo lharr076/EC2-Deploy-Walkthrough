@@ -1,20 +1,24 @@
 <h1><p align="center">EC2 Deploy Walkthrough<p align="center"></p></h1>
 <p align="center">
   <h2><p align="center">Step 1<p align="center"></p></h2>
-  <a href="https://imgur.com/shcBlVf"><img src="https://i.imgur.com/shcBlVf.png" title="source: imgur.com" /></a>
-  <br />
-  <br />
-  <a href="https://imgur.com/B4kJGjv"><img src="https://i.imgur.com/B4kJGjv.png?1" title="source: imgur.com" /></a>
-  <br />
-  This is a new set of access keys I needed to generate for my user. I choose to do this for two reasons, 1. I needed to for security reasons and to show simple it is. I logged into my AWS account and in the search bar I search IAM and at the IAM dashboard I select my     name create access key. To make your life easier, give your key a tag. I collected my keys then jetted over to the CLI.
+  <p align="center">
+    <a href="https://imgur.com/shcBlVf"><img src="https://i.imgur.com/shcBlVf.png" title="source: imgur.com" /></a>
+    <br />
+    <br />
+    <a href="https://imgur.com/B4kJGjv"><img src="https://i.imgur.com/B4kJGjv.png?1" title="source: imgur.com" /></a>
+    <br />
+    This is a new set of access keys I needed to generate for my user. I choose to do this for two reasons, 1. I needed to for security reasons and to show simple it is. I logged into my AWS account and in the search bar I search IAM and at the IAM dashboard I select    my name, create access key. To make your life easier, give your key a tag. I collected my keys then jetted over to the CLI.
+    <p align="center">
   <br />
   <br />
   <br />
   <br />
   <h2><p align="center">Step 2<p align="center"></p></h2>
-  <a href="https://imgur.com/bdSY4QZ"><img src="https://i.imgur.com/bdSY4QZ.png" title="source: imgur.com" /></a>
+  <p align="center">
+    <a href="https://imgur.com/bdSY4QZ"><img src="https://i.imgur.com/bdSY4QZ.png" title="source: imgur.com" /></a>
   <br />
   The local user needed to have AWS CLI installed so I installed it by simply downloading it from here https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html and next configuring my IAM creds in prep for Terraform.(Not displayed) As I navigated      through the AWS config, I did have to input my default region which in my case is US-EAST-1.
+   <p align=""center> 
   <br />
   <br />
   <br />
