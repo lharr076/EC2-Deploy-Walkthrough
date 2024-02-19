@@ -17,7 +17,7 @@
   <p align="center">
     <a href="https://imgur.com/bdSY4QZ"><img src="https://i.imgur.com/bdSY4QZ.png" title="source: imgur.com" /></a>
   <br />
-  The local user needed to have AWS CLI installed so I installed it by simply downloading it from here https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html and next configuring my IAM creds in prep for Terraform.(Not displayed) As I navigated      through the AWS config, I did have to input my default region which in my case is US-EAST-1.
+  The local user needed to have AWS CLI installed so I installed it by simply downloading it from here https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html and next configuring my IAM creds in prep for Terraform.(Not displayed) As I navigated      through AWS configure, I did have to input my default region which in my case is US-EAST-1.
    <p align=""center> 
   <br />
   <br />
@@ -29,7 +29,7 @@
   <br />
   <br />
   <a href="https://imgur.com/BUCJOtT"><img src="https://i.imgur.com/BUCJOtT.png" title="source: imgur.com" /></a>
-  After I set my config, I create a directory called terraform-aws-instance to house my infrastructure file/s. The directory is made and cd terraform-aws-instance command changes me into that directory to prepare for creating the file to house my code.
+  After I set my configurations, I create a directory called <i>terraform-aws-instance</i> to house my infrastructure file/s. The directory is made and <i>cd terraform-aws-instance</i> command changes me into that directory to prepare for creating the file to house my code.
   <p align="center">  
   <br />
   <br />
@@ -38,7 +38,7 @@
   <h2><p align="center">Step 4<p align="center"></p></h2>
   <p align="center">
     <p align="center"><a href="https://imgur.com/vpV2F3T"><img src="https://i.imgur.com/vpV2F3T.png" title="source: imgur.com" /></a><p align="center">
-  I have VS Code installed so I simply typed code Main.tf to open the app and I input my information before saving the file in my respective folder. A note I would recommend, if you are referencing someone elses code, review it, take the due diligence to look up the       ami id to confirm it is still availabile and so forth. This is something I have ran into in the past my very first time trying out Terraform.
+  I have VS Code installed so I simply typed <i>code Main.tf</i> to open the app and I input my information before saving the file in my respective folder. A note I would recommend, if you are referencing someone elses code, review it, take the due diligence to look up the ami id to confirm it is still availabile and so forth. This is something I have ran into in the past my very first time trying out Terraform.
     <p align="center">
   <br />
   <br />
@@ -48,7 +48,7 @@
   <p align="center">    
   <a href="https://imgur.com/253BQX3"><img src="https://i.imgur.com/253BQX3.png" title="source: imgur.com" /></a>
   <br /> 
-  I navigated back over to the command prompt, made sure I was still in my terraform folder and proceeded with the command terraform init and success the config has been initialized. Initializing with Terraform downloads and installs the providers configured in the code, which in this case is AWS.
+  I navigated back over to the command prompt, I made sure I was still in my terraform folder and proceeded with the command <i>terraform init</i> and success the config has been initialized. Initializing with Terraform downloads and installs the providers configured in the code, which in this case is AWS.
    <p align="center"> 
   <br />
   <br />
@@ -58,7 +58,7 @@
   <p align="center">   
   <a href="https://imgur.com/wzzxcFu"><img src="https://i.imgur.com/wzzxcFu.png" title="source: imgur.com" /></a>
   <br />  
-  I like to try and create good habits with things I am new to and that is what terraform fmt does. This will help give your configuration readability and consistency and this command will print out anything that may have been modified. This is really a cool tool          because this can help rule out mistakes because we are all human.
+  I like to try and create good habits with things I am new to and that is what <i>terraform fmt</i> does. This will help give your configuration readability and consistency and this command will print out anything that may have been modified. This is really a cool tool because this can help rule out mistakes because we are all human.
   <p align="center">  
   <br />
   <br />
@@ -68,7 +68,7 @@
   <p align="center"> 
   <a href="https://imgur.com/HpmriNq"><img src="https://i.imgur.com/HpmriNq.png" title="source: imgur.com" /></a>
   <br /> 
-  I input terraform validate to make sure my configuration is syntactically valid and internally consistent. How I interpret this is more checks and balances to the fmt command.
+  I input <i>terraform validate</i> to make sure my configuration is syntactically valid and internally consistent. How I interpret this is more checks and balances to the <i>fmt</i> command.
   <p align="center">   
   <br />
   <br />
@@ -83,7 +83,7 @@
   <br  />
   <br />
   <a href="https://imgur.com/91XbRUZ"><img src="https://i.imgur.com/91XbRUZ.png" title="source: imgur.com" /></a>
-  After typing yes to apply the terraform config, I have my first issue which is no default vpc for this user. So I navigate back to VS Code and add my cloudLab-vpc that I use for my projects. I save and try again.
+  After typing <i>yes</i> to apply the terraform config, I have my first issue which is no default vpc for this user. So I navigate back to VS Code and add my cloudLab-vpc subnet that I use for my projects. I save the modified code and attempted my deploy again.
   <p align="center">
   <br />
   <br />
@@ -104,7 +104,7 @@
   <br />
   <br />
   <a href="https://imgur.com/YToUrxB"><img src="https://i.imgur.com/YToUrxB.png" title="source: imgur.com" /></a>
-  Something to check out that I thought was neat and bears more useful information is terraform show. With terraform show, you can inspect the current state.
+  Something to check out that I thought was neat and bears more useful information is <i>terraform show</i>. With terraform show, you can inspect the current state displaying the resource ami-id, subnet-id and other useful information.
   <p align="center">  
   <br />
   <br />
@@ -119,6 +119,11 @@
   <br />
   <br />
   <a href="https://imgur.com/LO1DghD"><img src="https://i.imgur.com/LO1DghD.png" title="source: imgur.com" /></a>
-  After checking out the state, I went ahead and did a tear down of the infrastructure with the terraform destroy command. After the command, i nav back over to the EC2 dashboard to confirm.
+  After checking out the state, I went ahead and did a tear down of the infrastructure with the <i>terraform destroy</i> command. After the command, I nav back over to the EC2 dashboard to confirm.
     <p align="center">
+  <br />    
+  <h2><p align="center">Afterthoughts<p align="center"></p></h2>
+    <p align="center">
+      
+    <p align="center">  
 <p align="center">
